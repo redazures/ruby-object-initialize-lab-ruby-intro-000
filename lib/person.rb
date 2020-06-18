@@ -1,9 +1,14 @@
 class Person
-end
-board=["X",""]
 
-def position_taken?(board,index)
-  board[index]==" "
-end
+  def initialize(name)
+    @name=name
+  end
 
-puts position_taken?(board,1)
+  def name=(name)
+    @name=name
+  end
+
+  def name
+    @name
+  end
+end
